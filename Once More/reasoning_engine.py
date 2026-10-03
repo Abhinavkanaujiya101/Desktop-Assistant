@@ -16,7 +16,7 @@ class ReasoningEngine:
             
             # Handle basic arithmetic
             if any(op in problem for op in ['+', '-', '*', '/', '^', '**']):
-                # Replace words with operators
+                 # Replace words with operators
                 math_expr = problem_clean.replace('plus', '+').replace('add', '+').replace('sum', '+')
                 math_expr = math_expr.replace('minus', '-').replace('subtract', '-').replace('difference', '-')
                 math_expr = math_expr.replace('multiply by', '*').replace('times', '*').replace('product', '*')
