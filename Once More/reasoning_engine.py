@@ -13,6 +13,7 @@ class ReasoningEngine:
             # Handle algebraic expressions
             if any(word in problem_clean for word in ['x', 'y', 'z', 'algebra', 'equation']):
                 return self.solve_algebraic_expression(problem)
+
             
             # Handle basic arithmetic
             if any(op in problem for op in ['+', '-', '*', '/', '^', '**']):
